@@ -29,22 +29,24 @@ const Header = () => {
                     {/* SIGN-IN NAME */}
                     <div className='link'>
                         <p>HELLO NDA</p>
-                        <p>Account & Lists</p>
+                        <p className='font-extrabold md:text-sm'>Account & Lists</p>
                     </div>
 
                     {/* RETURNS & ORDERS */}
                     <div className='link'>
                         <p>Returns</p>
-                        <p>& Orders</p>
+                        <p className='font-extrabold md:text-sm'>& Orders</p>
                     </div>
 
                     {/* BASKET */}
-                    <div className='link'>
+                    <div className='relative link flex items-center'>
+
+                        <span className='absolute top-0 right-0 md:right-10 h-4 w-4 bg-yellow-400 text-center rounded-full text-black font-bold'>4</span>
+
                         <ShoppingCartIcon className='h-10' />
-                        <p>Basket</p>
+                        <p className='hidden md:inline font-extrabold md:text-sm mt-2'>Basket</p>
                     </div>
                 </div>
-
             </div>
 
             {/* Bottom nav */}
